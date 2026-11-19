@@ -1,0 +1,7 @@
+# Builder contract — binding (feature-lead § Fan-out rules 3). Builder agents and task cards link here; never restate it.
+
+- Zone: edit only inside it — a change needed outside is reported back, never made. Shared files (i18n JSON, global CSS, registries) → your namespace only, minimal Edit-tool edits, never a whole-file rewrite.
+- Reads/edits: issue independent reads in ONE message (batch); `Read` (never cat/sed) any file you will Edit; no unasserted programmatic string replacement — an edit that matches nothing must fail loudly.
+- Context is the bill — every turn re-sends everything you have read: Grep for the symbol first, then `Read` with offset/limit around it; a whole file only when you will rewrite most of it or it is short (< ~200 lines); never re-read an unchanged file. At ~120k context: commit what is green, push, hand back what is left.
+- Gates: run the package gate once per change set, not after every micro-edit (`reflex:verify-changes` § Builder inner-loop gate), output to a log file — read only its summary/failures (`tail`, `grep -E "fail|error"`), never the full run. A hung gate/test is a FAILURE — diagnose it, never just rerun.
+- Hand-back ≤ ~15 lines: sha · ACs met N/N · out-of-zone needs · everything NOT visually/device verified · final context / tool calls / minutes · a ≤ 8-line ZONE DIGEST (files touched → key symbols + line ranges) so the next agent in the zone reads less. Per-AC evidence, files changed and test names go in a report file — give its path.

@@ -1,0 +1,32 @@
+{
+  "generated_by": "reflex-publish",
+  "files": {
+    "plugins/reflex/skills/verify-changes/SKILL.md": "0602754aea3272e0b334c0a327f4ee943b1cb9b76a6b8b36cb9c87acbc49fd51",
+    "plugins/reflex/skills/i18n-guard/SKILL.md": "5b1eefa5ce715a92f70c7bcda4fbaf723a679ecaabe84090df961694fe0f73e9",
+    "plugins/reflex/skills/design-system/SKILL.md": "41e3e53b33e9f57a10c6e957c8917a65096edbdfb4cf3e19e6d0305c2a921054",
+    "plugins/reflex/skills/media-lifecycle/SKILL.md": "3986eecfb5803ad32f4a87000201cc2b8f0f185bc494404f1539c4ea5a3964e5",
+    "plugins/reflex/skills/money/SKILL.md": "2d8c3179fbff217d799a5bc50a2275b6675ce28e384d5046af9966d37f45ba1d",
+    "plugins/reflex/skills/project-structure/SKILL.md": "bf7c1f4f5b21893e8ffbfa7bf97efb38304d1018b5ad12c5767ab86b00d8abbe",
+    "plugins/reflex/skills/grill-with-docs/SKILL.md": "b0b908ec9f6492664842f842f32565437a38d8c8f4c491d3ca59147846cb5f85",
+    "plugins/reflex/skills/feature-lead/SKILL.md": "f05c32d5337b9f14ead850555559d5a46c510a7e812a61ac3e4341e3bf548b19",
+    "plugins/reflex/skills/feature-lead/builder-contract.md": "0c3fe6ba00c9af4a0593caeb8aed8abe8f6d5799de65171cd6afab38d2343021",
+    "plugins/reflex/skills/handoff/SKILL.md": "94bee8c16cbfcf9f1e15187f7e5d0d5a93c4adb7c512feceecaab80c8ff7c059",
+    "plugins/reflex/agents/backend-node.md": "d6dff3650fb5f06010a5aec32ead448829f7d44f2aa830f884d3d255075b6e5d",
+    "plugins/reflex/agents/frontend-react.md": "4321fe4f6c32b7668e26c5bebfc91814f0ccc8a10762dd3a520a1e1f53a97457",
+    "plugins/reflex/agents/db-postgres.md": "eea9f270e2d19b164383272c72131ba9599d80b3733bfa5e5e3f2261f26eac57",
+    "plugins/reflex/agents/devops-cicd.md": "87dcce40822a5e1cf132486b3ca969672d9a52ccb49fb8005ed9edc37bee3ff5",
+    "plugins/reflex/agents/code-reviewer.md": "1b3ff75de3819de89774d3e54781de5cc75a45c74d5eb372792d8be9f0bdfdd8",
+    "plugins/reflex/agents/qa-engineer.md": "870ca4c3ca2e145947633c413e4e086b496dbc511bedefce59d766785ff53c2b",
+    "plugins/reflex/agents/security-auditor.md": "4cc2988c5e91870f3b18d39cecce953707bd46e5a2ca18cb4693ba8bd5fb513b",
+    "plugins/reflex/agents/task-planner.md": "40e90d511e7406420b3b6bf9bad60a84b8eeb6559dd5a473a405b13224064fdf",
+    "plugins/reflex/agents/spec-challenger.md": "254079f0739156592e2e283be3acc7bcb881b403bc0ef30f4d5a94b5734d4beb",
+    "plugins/reflex/agents/release-gatekeeper.md": "b1c39bc706dbfacfe3da42b0fe7aa376d180c7263bd277b67e15949bae787cec",
+    "plugins/reflex/hooks/git-gate.py": "eff56fa1ba41aa565bde90ff6c8648ba9dec857a602860664db22b6e9e58700e",
+    "plugins/reflex/hooks/supabase-destructive-guard.py": "837819a1527d31d1ef9863365390d5f68fd95c3f060ba74a008442ecd845e3cd",
+    "plugins/reflex/rules/delivery.md": "2a852c4fdae6eed468f477d87feca588de0eb2e4a7cc051d1b36a9a0a8e2442c",
+    "plugins/reflex/standards/money-rounding-standard.md": "3918edb937ff99b28bc69b62bc4872fc198f372807939202212710bc17b58db9",
+    "plugins/reflex/standards/readme-and-diagram-standard.md": "8059f5c512ba30e07df54663b500ccc56695db55ba62f32b5a64bcffdb52a2be",
+    "plugins/reflex/standards/git-worktree-parallel-sessions.md": "aa27e60de81614ca9786757fabceda75e4c00adf81b955ae21d39723be8af000",
+    "install.py": "8e768cc8a5115383f82089b20aa7141a809515835ae306e609f41d5bfffcd6f8"
+  }
+}
