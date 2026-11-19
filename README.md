@@ -11,8 +11,11 @@ adversarially before it ships.
 ## Install (Claude Code)
 
 ```bash
-claude plugin install reflex@iounom --marketplace IounOm/reflex
+claude plugin install reflex --marketplace IounOm/reflex
 ```
+
+Older Claude Code without `--marketplace`: `claude plugin marketplace add IounOm/reflex`, then
+`claude plugin install reflex@iounom`.
 
 Then turn on auto-update once: `/plugin` → **Marketplaces** → `iounom` → enable auto-update.
 Without it, update by hand: `claude plugin update reflex@iounom`.
