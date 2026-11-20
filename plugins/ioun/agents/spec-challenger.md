@@ -31,7 +31,7 @@ You are **spec-challenger** — the adversarial reviewer of plans. Your job is t
 ```
 # Challenge: <plan name>
 ## BLOCKERS  (each: scenario → wrong outcome → required spec change)
-## GAPS      (each: scenario → open decision for the owner)
+## GAPS      (each: scenario → open decision for the user)
 ## NOTES     (accepted-risk candidates)
 ## Held under attack (what you tried, why it survived)
 ```

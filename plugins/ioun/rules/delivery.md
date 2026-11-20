@@ -10,8 +10,8 @@ Tier every task before the first edit; raise mid-flight, never lower. Fuzzy spec
 |---|---|---|
 | Trivial | docs/copy/config, no behavior change | format/lint → commit |
 | Small | one behavior, obvious spec | main thread → ROOT verify gate + gate skills as touched → `/code-review` (low/medium) → CI green → live smoke if a deployed path changed |
-| Feature | new capability, several packages, or any agent fan-out | `ioun:feature-lead` |
-| Risky | any `ioun:security-auditor` trigger (list: its description) — incl. granting an agent/automation NEW tool/file/permission access — or a migration | `ioun:feature-lead` + mandatory `ioun:spec-challenger` and `ioun:security-auditor` (`ioun:release-gatekeeper` runs on every `ioun:feature-lead` run) |
+| Feature | new capability, several packages | plan first (plan mode; `ioun:task-planner` for big or fuzzy work) → build in the main thread → ROOT verify gate + gate skills as touched → `/code-review` → CI green. `ioun:feature-lead` (agent team) ONLY when the user explicitly asks for it |
+| Risky | any `ioun:security-auditor` trigger (list: its description) — incl. granting an agent/automation NEW tool/file/permission access — or a migration | Feature path + mandatory `ioun:spec-challenger` (on the plan) and `ioun:security-auditor` (on the diff); `ioun:feature-lead` only when the user asks (then `ioun:release-gatekeeper` runs too) |
 
 Lead-written code gets the same reviewers. Ignore mid-edit IDE diagnostics; trust the gate.
 
