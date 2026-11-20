@@ -1,5 +1,6 @@
 {
   "name": "iounom",
+  "description": "Claude Code plugins for disciplined delivery — reflex: commit gates, review agents and session rules.",
   "owner": {
     "name": "I-oun Nirach",
     "url": "https://github.com/IounOm"
