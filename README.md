@@ -1,4 +1,4 @@
-# reflex
+# ioun
 
 Delivery reflexes for AI coding agents — the checks and habits that should fire on their own:
 run the project's gates before every commit, keep user-facing text translatable, route colors
@@ -11,16 +11,16 @@ adversarially before it ships.
 ## Install (Claude Code)
 
 ```bash
-claude plugin install reflex --marketplace IounOm/reflex
+claude plugin install ioun --marketplace IounOm/ioun
 ```
 
-Older Claude Code without `--marketplace`: `claude plugin marketplace add IounOm/reflex`, then
-`claude plugin install reflex@iounom`.
+Older Claude Code without `--marketplace`: `claude plugin marketplace add IounOm/ioun`, then
+`claude plugin install ioun@iounom`.
 
 Then turn on auto-update once: `/plugin` → **Marketplaces** → `iounom` → enable auto-update.
-Without it, update by hand: `claude plugin update reflex@iounom`.
+Without it, update by hand: `claude plugin update ioun@iounom`.
 
-Skills and agents are namespaced: type `/reflex:verify-changes`, or let the agent pick skills
+Skills and agents are namespaced: type `/ioun:verify-changes`, or let the agent pick skills
 from their descriptions. Session rules load automatically at session start.
 
 ## What's inside
@@ -40,9 +40,9 @@ macOS, Linux and Windows (Git Bash).
 Skills use the open Agent Skills format, so other tools can load them too:
 
 ```bash
-git clone https://github.com/IounOm/reflex ~/reflex
-python3 ~/reflex/install.py --tool codex      # or antigravity | copilot | cursor | all
-python3 ~/reflex/install.py --update          # later: pull + refresh every tool installed
+git clone https://github.com/IounOm/ioun ~/ioun
+python3 ~/ioun/install.py --tool codex      # or antigravity | copilot | cursor | all
+python3 ~/ioun/install.py --update          # later: pull + refresh every tool installed
 ```
 
 The installer links the skills into each tool's skills folder, converts the agents to the

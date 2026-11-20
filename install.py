@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Install reflex into AI coding tools other than Claude Code (Claude Code: use the plugin).
+"""Install the ioun plugin into AI coding tools other than Claude Code (Claude Code: use the plugin).
 
-    git clone https://github.com/IounOm/reflex ~/reflex
-    python3 ~/reflex/install.py --tool codex            # or antigravity | copilot | cursor | all
-    python3 ~/reflex/install.py --tool codex --dry-run  # show what would change
-    python3 ~/reflex/install.py --tool codex --uninstall
-    python3 ~/reflex/install.py --update                # git pull this clone, re-run every tool installed before
+    git clone https://github.com/IounOm/ioun ~/ioun
+    python3 ~/ioun/install.py --tool codex            # or antigravity | copilot | cursor | all
+    python3 ~/ioun/install.py --tool codex --dry-run  # show what would change
+    python3 ~/ioun/install.py --tool codex --uninstall
+    python3 ~/ioun/install.py --update                # git pull this clone, re-run every tool installed before
 
 What it installs, per tool (user level, all projects):
   skills  linked (copied when links are not allowed, e.g. Windows without Developer Mode)
@@ -15,7 +15,7 @@ What it installs, per tool (user level, all projects):
           instructions file; your own text in that file is kept. Cursor has no such file:
           the installer prints the text to paste into Cursor Settings → Rules once.
 Hooks are Claude Code only for now (each tool has its own hook schema and trust step).
-State: ~/.reflex/installed.json (what was written, so --uninstall removes exactly that).
+State: ~/.ioun/installed.json (what was written, so --uninstall removes exactly that).
 """
 
 from __future__ import annotations
@@ -30,13 +30,13 @@ import subprocess
 import sys
 from pathlib import Path
 
-HOME = Path(os.environ.get("REFLEX_HOME", Path.home()))
+HOME = Path(os.environ.get("IOUN_HOME", Path.home()))
 REPO = Path(__file__).resolve().parent
-PLUGIN = REPO / "plugins" / "reflex"
-STATE = HOME / ".reflex" / "installed.json"
-BEGIN, END = "<!-- reflex:start (managed by reflex/install.py — edits inside are overwritten) -->", "<!-- reflex:end -->"
+PLUGIN = REPO / "plugins" / "ioun"
+STATE = HOME / ".ioun" / "installed.json"
+BEGIN, END = "<!-- ioun:start (managed by the ioun plugin install.py — edits inside are overwritten) -->", "<!-- ioun:end -->"
 NOTE = (
-    "This tool has the reflex skills installed. Where these rules or skills say `reflex:<name>`, "
+    "This tool has the ioun skills installed. Where these rules or skills say `ioun:<name>`, "
     "use the skill or agent named `<name>`. Paths like `standards/x.md` are relative to {root}.\n\n"
 )
 
