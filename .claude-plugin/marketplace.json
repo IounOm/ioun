@@ -1,14 +1,14 @@
 {
   "name": "iounom",
-  "description": "Claude Code plugins for disciplined delivery — the ioun plugin: commit gates, review agents and session rules.",
+  "description": "Claude Code plugins for disciplined delivery — the riaproi plugin: commit gates, review agents and session rules.",
   "owner": {
     "name": "I-oun Nirach",
     "url": "https://github.com/IounOm"
   },
   "plugins": [
     {
-      "name": "ioun",
-      "source": "./plugins/ioun",
+      "name": "riaproi",
+      "source": "./plugins/riaproi",
       "description": "Delivery reflexes for AI coding agents: commit gates (verify, i18n, design tokens, money, media), spec-to-ship orchestration, review/QA/security agents and session rules."
     }
   ]

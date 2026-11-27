@@ -1,4 +1,6 @@
-# ioun
+# riaproi
+
+*riaproi* — from the Thai *riap roi*: neat, finished properly.
 
 Delivery reflexes for AI coding agents — the checks and habits that should fire on their own:
 run the project's gates before every commit, keep user-facing text translatable, route colors
@@ -11,16 +13,16 @@ adversarially before it ships.
 ## Install (Claude Code)
 
 ```bash
-claude plugin install ioun --marketplace IounOm/ioun
+claude plugin install riaproi --marketplace IounOm/riaproi
 ```
 
-Older Claude Code without `--marketplace`: `claude plugin marketplace add IounOm/ioun`, then
-`claude plugin install ioun@iounom`.
+Older Claude Code without `--marketplace`: `claude plugin marketplace add IounOm/riaproi`, then
+`claude plugin install riaproi@iounom`.
 
 Then turn on auto-update once: `/plugin` → **Marketplaces** → `iounom` → enable auto-update.
-Without it, update by hand: `claude plugin update ioun@iounom`.
+Without it, update by hand: `claude plugin update riaproi@iounom`.
 
-Skills and agents are namespaced: type `/ioun:verify-changes`, or let the agent pick skills
+Skills and agents are namespaced: type `/riaproi:verify-changes`, or let the agent pick skills
 from their descriptions. Session rules load automatically at session start.
 
 ## What's inside
@@ -40,9 +42,9 @@ macOS, Linux and Windows (Git Bash).
 Skills use the open Agent Skills format, so other tools can load them too:
 
 ```bash
-git clone https://github.com/IounOm/ioun ~/ioun
-python3 ~/ioun/install.py --tool codex      # or antigravity | copilot | cursor | all
-python3 ~/ioun/install.py --update          # later: pull + refresh every tool installed
+git clone https://github.com/IounOm/riaproi ~/riaproi
+python3 ~/riaproi/install.py --tool codex      # or antigravity | copilot | cursor | all
+python3 ~/riaproi/install.py --update          # later: pull + refresh every tool installed
 ```
 
 The installer links the skills into each tool's skills folder, converts the agents to the
