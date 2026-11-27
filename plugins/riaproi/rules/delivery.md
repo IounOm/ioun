@@ -29,6 +29,8 @@ After any add/edit/delete, run the gates before committing/pushing. **Invoke eac
 
 **Run the gates yourself. Before any `git push`, show the user what will be pushed and ask them to confirm** — unless they already told you to push in this task. (The git-gate hook on commit/push is only a non-blocking reminder.)
 
+- **File placement** (any file that outlives the session — export, report, PDF, sheet) → skill `riaproi:file-placement`: home + name from the owning standard first, never left in Downloads/scratchpad.
+
 ## Ship discipline — CI / build / deploy frugality  ⭐ IMPORTANT
 
 **Never trigger a build/CI/deploy for a change that can't affect the build output** (CI minutes and cloud builds cost real money). Wiring is per-project: bake it into the project scaffold, retrofit older repos as touched; each repo's `AGENTS.md` documents its specifics.

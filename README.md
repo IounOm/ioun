@@ -29,7 +29,7 @@ from their descriptions. Session rules load automatically at session start.
 
 | Kind | Items |
 | --- | --- |
-| Skills | `core-web-vitals` · `design-system` · `feature-lead` · `frontend-design` · `grill-with-docs` · `handoff` · `i18n-guard` · `marketing-analytics` · `marketing-copywriting` · `marketing-cro` · `marketing-schema` · `marketing-seo-audit` · `media-lifecycle` · `money` · `project-structure` · `react-best-practices` · `ui-ux-pro-max` · `verify-changes` · `web-accessibility` · `web-best-practices` · `web-kit` · `web-performance` · `web-quality-audit` · `web-seo` |
+| Skills | `core-web-vitals` · `design-system` · `feature-lead` · `file-placement` · `frontend-design` · `grill-with-docs` · `handoff` · `i18n-guard` · `marketing-analytics` · `marketing-copywriting` · `marketing-cro` · `marketing-schema` · `marketing-seo-audit` · `media-lifecycle` · `money` · `project-structure` · `react-best-practices` · `ui-ux-pro-max` · `verify-changes` · `web-accessibility` · `web-best-practices` · `web-kit` · `web-performance` · `web-quality-audit` · `web-seo` |
 | Agents | `backend-node` · `code-reviewer` · `db-postgres` · `devops-cicd` · `frontend-react` · `qa-engineer` · `release-gatekeeper` · `security-auditor` · `spec-challenger` · `task-planner` |
 | Hooks | git commit/push gate reminder · destructive-SQL guard for the Supabase MCP · session rules |
 | Standards | git-worktree-parallel-sessions · money-rounding-standard · readme-and-diagram-standard |
