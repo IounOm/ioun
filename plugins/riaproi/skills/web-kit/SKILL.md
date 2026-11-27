@@ -59,8 +59,9 @@ text below it: the project's tokens, i18n layer and rules always beat a skill's 
   an MCP approval by server name, so a swapped command would run without a new prompt. Where the
   GitHub plan allows, require a review and CODEOWNERS on those paths.
 - **Every user-facing string goes through one i18n layer**; Thai text keeps `line-height` >= 1.6.
-- **One icon set per app.** New shadcn-style apps use `lucide-react`, pinned to an exact version
-  and listed in `experimental.optimizePackageImports` in `next.config`. An app that already has a set
+- **One icon set per app.** New shadcn-style apps use `lucide-react`, pinned to an exact version,
+  with named imports (Next.js already optimizes `lucide-react` by default: no `next.config` entry
+  needed; other bundlers rely on tree-shaking of named imports). An app that already has a set
   (Iconoir, a handful of custom `SvgIcon`s) keeps it: migrating is churn. Brand logos stay inline
   SVG (Lucide has none). No emoji or text glyphs (`⚠`, `←`) as UI icons.
 - **Animated registry components (Magic UI and similar) are owned code, public pages only.** Only
