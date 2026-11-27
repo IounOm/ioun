@@ -23,6 +23,9 @@
 - `bun run lint` (jsx-a11y) and the axe tests pass.
 - Live check: Chrome DevTools MCP `lighthouse_audit` (accessibility, best practices, SEO for
   public pages) on the changed page; attach the score or the fixed findings to the PR.
+- Motion: every animation respects `prefers-reduced-motion`.
+- Public pages before release: run the web-kit design-quality URL audit (impeccable) on mobile
+  and desktop; fix contrast and tiny-text findings, treat slop findings as advice.
 
 ## 4. States
 

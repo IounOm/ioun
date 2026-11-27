@@ -59,6 +59,18 @@ text below it: the project's tokens, i18n layer and rules always beat a skill's 
   an MCP approval by server name, so a swapped command would run without a new prompt. Where the
   GitHub plan allows, require a review and CODEOWNERS on those paths.
 - **Every user-facing string goes through one i18n layer**; Thai text keeps `line-height` >= 1.6.
+- **One icon set per app.** New shadcn-style apps use `lucide-react`, pinned to an exact version
+  and listed in `experimental.optimizePackageImports` in `next.config`. An app that already has a set
+  (Iconoir, a handful of custom `SvgIcon`s) keeps it: migrating is churn. Brand logos stay inline
+  SVG (Lucide has none). No emoji or text glyphs (`⚠`, `←`) as UI icons.
+- **Animated registry components (Magic UI and similar) are owned code, public pages only.** Only
+  in a project that already runs Tailwind v4 + shadcn (`components.json`); an MUI or Tailwind v3
+  project rewrites the effect natively instead of adding a second styling system. `--dry-run`, then
+  the user's yes (third-party registry rule above). After the add: replace every hex default and
+  raw palette class with token props, guard the animation with `motion-safe:` or
+  `useReducedMotion` (most upstream components skip it), drop `tracking-*` / `uppercase` on text
+  that can be Thai and any hard-coded `Intl` locale. Prefer zero-dependency CSS components; one
+  that pulls in `motion` gets an exact pin and a bundle check first.
 
 ## 4. Turn on only when the project needs it
 
@@ -69,6 +81,7 @@ text below it: the project's tokens, i18n layer and rules always beat a skill's 
 | Search Console | `AminForou/mcp-gsc`, read-only | keep destructive tools off |
 | Payments | the provider's official MCP, test keys only | read `references/ecommerce.md` first |
 | Performance budget in CI | Lighthouse CI on public pages | fail the PR under the budget |
+| Design-quality audit before releasing a public page | `DO_NOT_TRACK=1 npx --yes impeccable@4.11.1 detect --json --viewport 1280x800 <url>` (repeat at `390x844`) | on a deployed or preview URL, never as a CI gate: source scans are blind to TSX/Tailwind. Act on contrast, tiny text and cramped custom components; slop rules (gradient text, halo, kicker, fonts) are advice. Its leading, tracking, straggler and line-length rules assume Latin script and misfire on Thai. Never install its skill or hook, never run `live` |
 
 Pin every version you add and turn telemetry off where the tool has it.
 
